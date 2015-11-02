@@ -14,164 +14,56 @@
 	<string>^~G</string>
 	<key>name</key>
 	<string>Xtend</string>
-	<key>patterns</key>
-	<array>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.xtend</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>^(#!).+$\n</string>
-			<key>name</key>
-			<string>comment.line.hashbang.xtend</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.package.xtend</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>storage.modifier.package.xtend</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.terminator.xtend</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>^\s*(package)\b(?:\s*([^ ;$]+)\s*(;)?)?</string>
-			<key>name</key>
-			<string>meta.package.xtend</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>(import static extension?)\b\s*</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.import.static.xtend</string>
-				</dict>
-			</dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.import.xtend</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>storage.modifier.import.xtend</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.terminator.xtend</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>storage.modifier.import.xtend</string>
-			<key>end</key>
-			<string>\s*(?:$|(?=%>)(;))</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.terminator.xtend</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>meta.import.xtend</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>\.</string>
-					<key>name</key>
-					<string>punctuation.separator.xtend</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\s</string>
-					<key>name</key>
-					<string>invalid.illegal.character_not_allowed_here.xtend</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>(import)\b\s*</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.import.xtend</string>
-				</dict>
-			</dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.import.xtend</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>storage.modifier.import.xtend</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.terminator.xtend</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>storage.modifier.import.xtend</string>
-			<key>end</key>
-			<string>\s*(?:$|(?=%>)|(;))</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.terminator.xtend</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>meta.import.xtend</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>\.</string>
-					<key>name</key>
-					<string>punctuation.separator.xtend</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\s</string>
-					<key>name</key>
-					<string>invalid.illegal.character_not_allowed_here.xtend</string>
-				</dict>
-			</array>
-		</dict>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.other.package.xtend</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>entity.name.package.xtend</string>
+                </dict>
+                <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>punctuation.terminator.xtend</string>
+                </dict>
+            </dict>
+            <key>match</key>
+            <string>^\s*(package)\b(?:\s*([^ ;$]+)\s*(;)?)?</string>
+            <key>name</key>
+            <string>meta.package.xtend</string>
+        </dict>
+        <dict>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.other.import.xtend</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>entity.name.package.xtend</string>
+                </dict>
+                <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>punctuation.terminator.xtend</string>
+                </dict>
+            </dict>
+            <key>match</key>
+            <string>^\s*(import)\s+(?:\s*([^ ;$]+)\s*(;)?)?$</string>
+            <key>name</key>
+            <string>meta.import.xtend</string>
+        </dict>
         <dict>
             <key>captures</key>
             <dict>
@@ -188,7 +80,36 @@
                 <key>3</key>
                 <dict>
                     <key>name</key>
-                    <string>variable.language.extension.xtend</string>
+                    <string>entity.name.package.xtend</string>
+                </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>punctuation.terminator.xtend</string>
+                </dict>
+            </dict>
+            <key>match</key>
+            <string>^\s*(import)\s+(static)\s+(?:\s*([^ ;$]+)\s*(;)?)?$</string>
+            <key>name</key>
+            <string>meta.import.static.xtend</string>
+        </dict>
+        <dict>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.other.import.xtend</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.other.static.xtend</string>
+                </dict>
+                <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>storage.modifier.other.xtend</string>
                 </dict>
                 <key>4</key>
                 <dict>
@@ -206,11 +127,11 @@
             <key>name</key>
             <string>meta.import.static.extension.xtend</string>
         </dict>
-		<dict>
-			<key>include</key>
-			<string>#xtend</string>
-		</dict>
-	</array>
+        <dict>
+            <key>include</key>
+            <string>#xtend</string>
+        </dict>
+    </array>
 	<key>repository</key>
 	<dict>
 		<key>annotations</key>
@@ -219,7 +140,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(?<!\.)(@[^ (]+)(\()</string>
+					<string>(?&lt;!\.)(@[^ (]+)(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -278,7 +199,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?<!\.)@\S+</string>
+					<string>(?&lt;!\.)@\S+</string>
 					<key>name</key>
 					<string>storage.type.annotation.xtend</string>
 				</dict>
@@ -297,7 +218,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?<=\)|\])(?!\s*{)|(?<=})|(?=[;])|$</string>
+			<string>(?&lt;=\)|\])(?!\s*{)|(?&lt;=})|(?=[;])|$</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -713,7 +634,7 @@
 			<key>applyEndPatternLast</key>
 			<integer>1</integer>
 			<key>begin</key>
-			<string>(?&lt;=;|^)(?=\s*(?:(?:private|protected|public|native|synchronized|abstract|threadsafe|transient|static|final)\s+)*[A-Z]\w*\()</string>
+			<string>(?&lt;=;|^)(?=\s*(?:(?:private|protected|override|public|native|synchronized|abstract|threadsafe|transient|static|final)\s+)*[A-Z]\w*\()</string>
 			<key>end</key>
 			<string>}</string>
 			<key>patterns</key>
@@ -1694,7 +1615,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(native|synchronized|abstract|threadsafe|transient|extension)\b</string>
+					<string>\b(override|native|synchronized|abstract|threadsafe|transient|extension)\b</string>
 					<key>name</key>
 					<string>storage.modifier.other.xtend</string>
 				</dict>
@@ -1867,14 +1788,18 @@
 					<string>constant.character.escape.xtend</string>
 				</dict>
 				<dict>
+					<key>include</key>
+					<string>#xtend-code</string>
+				</dict>
+				<dict>
 					<key>applyEndPatternLast</key>
 					<integer>1</integer>
 					<key>begin</key>
-					<string>\«</string>
+					<string>«</string>
+					<key>end</key>
+					<string>»</string>
 					<key>name</key>
 					<string>variable.other.interpolated.xtend</string>
-					<key>end</key>
-					<string>\»</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1889,33 +1814,19 @@
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>\w</string>
+							<string>(?&lt;=«)(.*?)(?=»)</string>
 							<key>name</key>
-							<string>source.xtend.embedded.source</string>
+							<string>meta.structure</string>
 						</dict>
-						<dict>
-							<key>match</key>
-							<string>\.</string>
-							<key>name</key>
-							<string>keyword.other.dereference.xtend</string>
-						</dict>
+						
 					</array>
 				</dict>
 				<dict>
-					<key>begin</key>
-					<string>\«\w</string>
-					<key>name</key>
-					<string>source.xtend.embedded.source</string>
-					<key>end</key>
-					<string>\»</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#nest_curly</string>
+							<key>match</key>
+							<string>\b(toJavaCode)\b</string>
+							<key>name</key>
+							<string>keyword.operator.logical.xtend</string>
 						</dict>
-					</array>
-				</dict>
 			</array>
 		</dict>
 		<key>string-quoted-single-multiline</key>
@@ -2111,7 +2022,7 @@
                             (?:(?:[a-z]\w*\.)*[A-Z]+\w*) # object type
                         )
                         \s+
-                        [\w\d_<>\[\],\s]+
+                        [\w\d_&lt;&gt;\[\],\s]+
                         (?:=|$)
                         
         			))</string>
@@ -2194,6 +2105,6 @@
 	<key>scopeName</key>
 	<string>source.xtend</string>
 	<key>uuid</key>
-	<string>B3A64888-EBBB-4436-8D9E-F1169C5D7613</string>
+	<string>3db04fb3-6f58-4a03-9d89-24cc768b04df</string>
 </dict>
 </plist>
